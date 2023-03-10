@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paysover</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <div id="popup" class="popup --balans open">
+    <div class="popup__body">
+        <div class="popup__content --full-screen">
+            <button class="popup__close">
+                <img src="/images/popup-close.svg" loading="lazy" alt="close">
+            </button>
+            <div class="popup__title --big-title">
+                ПРОМО КОДЫ
+            </div>
+            <button class="button button__colored-partners --popup-balans">
+                Добавить промокод
+            </button>
+            <table class="table --desc">
+                <tr class="table__head">
+                    <td>код</td>
+                    <td>дата создания</td>
+                    <td>активен</td>
+                </tr>
+                <tr class="table__text">
+                    <td>cdog_user</td>
+                    <td>February 7, 2023 00:00</td>
+                    <td>нет</td>
+                </tr>
+                <tr class="table__text">
+                    <td>cdog_user</td>
+                    <td>February 7, 2023 00:00</td>
+                    <td>нет</td>
+                </tr>
+                </table>
+                <table class="table --mob">
+                <tbody>
+                    <tr class="table__head">
+                        <td>код</td>
+                        <td>дата создания</td>
+                        <td>активен</td>
+                    </tr>
+                    <tr class="table__text">
+                        <td>cdog_user</td>
+                        <td>February 7, 2023 00:00</td>
+                        <td>нет</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr class="table__head">
+                        <td>код</td>
+                        <td>дата создания</td>
+                        <td>активен</td>
+                    </tr>
+                    <tr class="table__text">
+                        <td>cdog_user</td>
+                        <td>February 7, 2023 00:00</td>
+                        <td>нет</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<div id="popup" class="popup --balans-cod open">
+    <div class="popup__body">
+        <div class="popup__content">
+            <button class="popup__close">
+                <img src="/images/popup-close.svg" loading="lazy" alt="close">
+            </button>
+            <div class="popup__title">
+                Cod
+            </div>
+            <div class="form__item-partners">
+                <input id="formCod" type="text" name="cod" class="form__input-partners"/>
+              </div>
+            <button class="button button__colored-partners">
+                Добавить промокод
+            </button>
+            </div>
+        </div>
+    </div>
+</div>  
+
+<div id="popup" class="popup --merchant open">
+    <div class="popup__body">
+        <div class="popup__content">
+            <button class="popup__close">
+                <img src="/images/popup-close.svg" loading="lazy" alt="close">
+            </button>
+            <div class="popup__title">
+                Add merchant
+            </div>
+            <div class="form__item-partners">
+                <label for="formTitle" class="form__label-partners">Title</label>
+                <input id="formTitle" type="text" name="title" class="form__input-partners"/>
+            </div>
+            <div class="form__item-partners">
+                <label for="formCurrency" class="form__label-partners">Currency</label>
+                <input id="formCurrency" type="text" name="currency" class="form__input-partners"/>
+            </div>
+            <div class="form__item-partners">
+                <div class="form__label-partners">Type convert</div>
+                <select name="typeConvert" class="form__select">
+                  <option value="Базовый 1" selected>Базовый 1</option>
+                  <option value="Базовый 2">Базовый 2</option>
+                  <option value="Базовый 3">Базовый 3</option>
+                </select>
+            </div>
+            <div class="popup__button-container">
+                <button class="button button__colored-partners --popup-merchant --tarif-head">
+                    To list
+                </button>
+                <button class="button button__colored-partners --popup-merchant">
+                    Save
+                </button>
+            </div>            
+        </div>
+    </div>
+</div>
+
+<div id="popup" class="popup --wallet open">
+    <div class="popup__body">
+        <div class="popup__content">
+            <button class="popup__close">
+                <img src="/images/popup-close.svg" loading="lazy" alt="close">
+            </button>
+            <div class="popup__title">
+                Add wallet
+            </div>
+            <div class="form__item-partners">
+                <div class="form__label-partners">Crypto</div>
+                <select name="crypto" class="form__select">
+                  <option value="USDT (TRS21)" selected>USDT (TRS21)</option>
+                  <option value="USDT (TRS22)">USDT (TRS22)</option>
+                  <option value="USDT (TRS23)">USDT (TRS23)</option>
+                </select>
+            </div>
+            <div class="form__item-partners">
+                <div class="form__label-partners">Merchant</div>
+                <select name="merchant" class="form__select">
+                  <option value="Choose a merchant 1" selected>Choose a merchant 1</option>
+                  <option value="Choose a merchant 2">Choose a merchant 2</option>
+                  <option value="Choose a merchant 3">Choose a merchant 3</option>
+                </select>
+            </div>
+            <div class="form__item-partners">
+                <label for="formAdress" class="form__label-partners">Adress</label>
+                <input id="formAdress" type="text" name="adress" class="form__input-partners"/>
+            </div>
+            <div class="form__item-partners">
+                <label for="formNumber" class="form__label-partners">Minimum number of transaction confirmations</label>
+                <input id="formNumber" type="text" name="number" class="form__input-partners"/>
+            </div>
+            <div class="form__item-partners">
+                <label for="formTransaction" class="form__label-partners">Transaction lifetime (in minutes)</label>
+                <input id="formTransaction" type="text" name="transaction" class="form__input-partners"/>
+            </div>
+            
+            <div class="popup__button-container">
+                <button class="button button__colored-partners --popup-merchant --tarif-head">
+                    To list
+                </button>
+                <button class="button button__colored-partners --popup-merchant">
+                    Save
+                </button>
+            </div>            
+        </div>
+    </div>
+</div>
+
+
+<div id="popup" class="popup --profile open">
+    <div class="popup__body">
+        <div class="popup__content">
+            <button class="popup__close">
+                <img src="/images/popup-close.svg" loading="lazy" alt="close">
+            </button>
+            <div class="popup__form-container">
+                <div class="form__item-partners">
+                    <div class="form__label-partners">Choose a tariff</div>
+                    <select name="tarif" class="form__select">
+                        <option value="Бесплатный (0 USD)" selected>Бесплатный (0 USD)</option>
+                        <option value="Бесплатный (1USD)">Бесплатный (1 USD)</option>
+                        <option value="Бесплатный (2 USD)">Бесплатный (2 USD)</option>
+                    </select>
+                </div>
+                <div class="form__item-partners">
+                    <div class="form__label-partners">Choose a cryptocurrency</div>
+                    <select name="cryptocurrency" class="form__select">
+                      <option value="USDT (TRC20)" selected>USDT (TRC20)</option>
+                      <option value="USDT (TRC21)">USDT (TRC22)</option>
+                      <option value="USDT (TRC23)">USDT (TRC23)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form__item-partners">
+                    <label for="formPromocode" class="form__label-partners">Промо код</label>
+                    <input id="formPromocode" type="text" name="promocode" class="form__input-partners"/>
+            </div>
+            <button class="button button__colored-partners --popup-merchant">
+                    Go to pay
+            </button>
+       
+       </div>
+    </div>
+</div>
+
+<div id="popup" class="popup --profile-created open">
+    <div class="popup__body">
+        <div class="popup__content">
+            <button class="popup__close">
+                <img src="/images/popup-close.svg" loading="lazy" alt="close">
+            </button>
+            <div class="popup__content-text">
+                <p>
+                    Transaction successfully created:
+                </p>
+                <p>
+                    - Pay <span>1.005554 Tether USD</span>  to <span>843878YUsdN8dGFTfdNHJgb469</span> 
+                </p>
+            </div>
+            <button class="button button__colored-partners --popup-merchant">
+                Copy
+            </button>
+       
+       </div>
+    </div>
+</div>
+
+<div id="popup" class="popup --profile-password open">
+    <div class="popup__body">
+        <div class="popup__content">
+            <button class="popup__close">
+                <img src="/images/popup-close.svg" loading="lazy" alt="close">
+            </button>
+            <div class="popup__title --password">
+                Изменить пароль
+            </div>
+            <div class="popup__form-container --password">
+                <div class="form__item">
+                    <label for="formPassword" class="form__label --popup">Старый пароль</label>
+                    <input id="formPassword" autocomplete="off" type="password" value="123456" name="password" class="form__input password">
+                </div>
+                <div class="form__item">
+                    <label for="formPassword" class="form__label --popup">Новый пароль</label>
+                    <input id="formPassword" autocomplete="off" type="password" value="123456" name="password" class="form__input password">
+                </div>
+                <div class="form__item">
+                    <label for="formPassword" class="form__label --popup">Подвердить пароль</label>
+                    <input id="formPassword" autocomplete="off" type="password" value="123456" name="password" class="form__input password">
+                </div>
+            </div>
+            
+            <button class="button button__colored-partners --popup-password">
+                Сохранить
+            </button>
+       
+       </div>
+    </div>
+</div>
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>
